@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    color: #f4f4f4; /* Light text for readability */
+    font-family: Arial, sans-serif; /* Simple, clean font */
+    background-color: #1a1a1a; /* Dark background for contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container for sections */
+.container {
+    max-width: 1200px; /* Limit maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+}
+
+/* Header Styles */
+header {
+    flex: 1;
+    text-align: center; /* Center header text */
+    padding: 20px 0; /* Add vertical padding */
+    background: #007BFF; /* Blue background for header */
+    color: #fff; /* White text */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation Styles */
+nav {
+    margin: 20px 0; /* Add margin above and below */
+}
+
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between links */
+}
+
+nav ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for visibility */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Section Styles */
+section {
+    flex: 1;
+    background: #2a2a2a; /* Dark background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    padding: 20px; /* Padding inside sections */
+    margin-bottom: 20px; /* Space below sections */
+}
+
+/* Figure Styles */
+figure {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack image above caption */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+    margin: 0; /* Remove default margin */
+}
+
+/* Image Styles */
+figure img {
+    max-width: 25%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space between image and caption */
+}
+
+/* Caption Styles */
+figcaption {
+    font-size: 14px; /* Adjust font size for better readability */
+    color: #f4f4f4; /* Light color for caption text */
+}
+/* Gallery Styles */
+.gallery {
+    display: grid; /* Use grid layout for the gallery */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 15px; /* Space between images */
+}
+
+.gallery a {
+    display: block; /* Ensure anchor behaves like a block */
+    overflow: hidden; /* Hide overflow to maintain equal sizing */
+    border-radius: 8px; /* Rounded corners for anchors */
+    height: 200px; /* Set a fixed height for all images */
+}
+
+.gallery img {
+    width: 100%; /* Make images responsive */
+    height: 100%; /* Make images fill the height of the container */
+    border-radius: 8px; /* Rounded corners for images */
+    transition: transform 0.3s, filter 0.3s; /* Smooth transition for hover effect */
+    filter: grayscale(1); /* Default to grayscale */
+    object-fit: cover; 
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    filter: grayscale(0); /* Remove grayscale on hover */
+}
+
+.video img {
+    width: 100%; /* Make images responsive */
+    height: 100%; /* Make images fill the height of the container */
+    border-radius: 8px; /* Rounded corners for images */
+    transition: transform 0.3s, filter 0.3s; /* Smooth transition for hover effect */
+    filter: grayscale(1); /* Default to grayscale */
+    object-fit: cover; 
+}
+
+.video :hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    filter: grayscale(0); /* Remove grayscale on hover */
+
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 40px; /* Set a fixed width for the logos */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 40px; /* Ensure logos do not exceed this height */
+    cursor: pointer;
+}
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation items on small screens */
+        margin: 10px 0; /* Add vertical spacing */
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Padding for footer */
+    background: #007BFF; /* Blue background for footer */
+    color: #fff; /* White text */
+    /* margin-top: 20px; Space above footer */
+}
